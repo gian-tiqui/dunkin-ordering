@@ -13,3 +13,15 @@ export async function POST(req: NextRequest) {
     data,
   });
 }
+
+export async function PATCH(req: NextRequest) {
+  return NextResponse.json({
+    hi: "meow",
+  });
+}
+
+export async function DELETE(req: NextRequest) {
+  return NextResponse.json({
+    message: "Donut deleted",
+  });
+}
